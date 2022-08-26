@@ -20,18 +20,11 @@ const shrinkFont = () => {
 };
 
 const changeColor = () => {
-  const r = Math.floor(Math.random() * 255);
-  const g = Math.floor(Math.random() * 255);
-  const b = Math.floor(Math.random() * 255);
-
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
 
   text.style.color = `rgb(${r}, ${g}, ${b})`;
-
-  // if (text.style.color === "rgb(255, 255, 255)" || text.style.color === "") {
-  //   text.style.color = "#00cfff";
-  // } else {
-  //   text.style.color = "#fff";
-  // }
 };
 
 sizeUpBtn.addEventListener("click", enlargeFont);
